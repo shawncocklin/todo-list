@@ -1,0 +1,103 @@
+/*=== RESETS ===*/
+
+*, 
+*::before, 
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1;
+}
+
+ul[class],
+ol[class] {
+  list-style: none;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+i {
+  pointer-events: none;
+}
+
+/*=== GENRAL STYLES ===*/
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-size: 1.25rem;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: hsl(180, 80%, 25%);
+  color: white;
+}
+
+header,
+form {
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input,
+button {
+  border: none;
+  background: white;
+  padding: .5rem;
+}
+
+button { 
+  cursor: pointer;
+}
+
+.checked {
+  text-decoration: line-through;
+}
+
+.todo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-list {
+  min-width: 30%;
+}
+
+.todo-item {
+  display: flex;
+  background: white;
+  margin: .75rem;
+  padding: .5rem;
+  color: #333;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todo-item li {
+  flex-grow: 1;
+}
