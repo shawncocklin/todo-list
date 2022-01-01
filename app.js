@@ -38,7 +38,7 @@ function checkAndDelete(e) {
   }
 
   if(item.classList.contains('complete-btn')) {
-    item.previousSibling.classList.add('checked')
+    item.previousSibling.classList.toggle('checked')
   }
 }
 
